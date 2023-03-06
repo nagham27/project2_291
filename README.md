@@ -10,7 +10,7 @@ singarac: Yesith Singarachchige<br />
 "We declare that we did not collaborate with anyone outside our own
 group in this assignment"
 
-Explanation:<br /><br />
+Explanation:<br />
 
 Q1:<br />
 SELECT COUNT( * ) <br />
