@@ -13,14 +13,14 @@ group in this assignment"
 Explanation:<br /><br />
 
 Q1:<br />
-SELECT COUNT(*) <br />
+SELECT COUNT( * ) <br />
 FROM ( SELECT Orders.order_id<br />
        FROM Customers, Orders, Order_items<br />
        WHERE Customers.customer_postal_code = {randomCode}<br />
                 AND Orders.order_id = Order_items.order_id<br />
                 AND Orders.customer_id = Customers.customer_id  <br />
        GROUP BY (Orders.order_id)<br />
-       HAVING COUNT(*) > 1);<br />
+       HAVING COUNT( * ) > 1);<br />
        
 No index was created for Orders.order_id beacuse order_id is a primary key and SQLite will automatically create an index on it.<br />
 No index was created for Customers.customer_id beacuse customer_id is a primary key and SQLite will automatically create an index on it.<br />
