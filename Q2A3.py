@@ -155,7 +155,7 @@ def drawGraph(uninformedPlot, selfPlot, userPlot):
     axes.set_title('Q2 (Runtime in ms)')
     axes.legend()
 
-    plt.savefig('./Q3A2chart.png')
+    plt.savefig('./Q2A3chart.png')
     print('Chart saved to file')
     
     plt.close()
