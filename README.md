@@ -15,7 +15,7 @@ Explanation:<br /><br />
 Q1:<br />
 SELECT COUNT(*) <br />
 FROM ( SELECT Orders.order_id<br />
-       FROM Customers, Orders, Order_items<br /><br />
+       FROM Customers, Orders, Order_items<br />
        WHERE Customers.customer_postal_code = {randomCode}<br />
                 AND Orders.order_id = Order_items.order_id<br />
                 AND Orders.customer_id = Customers.customer_id  <br />
